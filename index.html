@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#0b1020" />
+
+  <title>1 Million Dollars</title>
+
+  <meta name="description" content="1 Million Dollars — trading notes, forecasts, reviews and market-related news. Published via GitHub, delivered fast via GitHub Pages." />
+  <meta name="author" content="Vladimir Antonov" />
+  <meta name="publisher" content="Vladimir Antonov" />
+  <meta name="copyright" content="Vladimir Antonov" />
+
+  <link rel="canonical" href="https://antonovvladimirchebara-debug.github.io/1/" />
+
+  <meta property="og:title" content="1 Million Dollars" />
+  <meta property="og:description" content="Trading news, forecasts and reviews. GitHub as CMS, GitHub Pages as delivery." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:url" content="https://antonovvladimirchebara-debug.github.io/1/" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="1 Million Dollars" />
+  <meta name="twitter:description" content="Trading news, forecasts and reviews. Fast static site." />
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"Organization",
+        "name":"Vladimir Antonov",
+        "url":"https://antonovvladimirchebara-debug.github.io/1/"
+      },
+      {
+        "@type":"WebSite",
+        "name":"1 Million Dollars",
+        "url":"https://antonovvladimirchebara-debug.github.io/1/",
+        "publisher":{"@type":"Organization","name":"Vladimir Antonov"}
+      }
+    ]
+  }
+  </script>
+
+  <!-- Optional fonts (remove for maximum speed/zero external requests) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="manifest" href="site.webmanifest" />
+</head>
+
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+
+  <header class="header" id="top">
+    <div class="container header__row">
+      <a class="brand" href="#top" aria-label="Go home">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__text">
+          <span class="brand__title">1 Million Dollars</span>
+          <span class="brand__sub">News • Forecasts • Reviews • Notes</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__link" href="#feed">Posts</a>
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#contact">Contact</a>
+      </nav>
+
+      <button class="menuBtn" id="menuBtn"
+              aria-label="Open menu"
+              aria-expanded="false"
+              aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobileMenu" id="mobileMenu" hidden>
+      <div class="container mobileMenu__inner">
+        <a class="mobileMenu__link" href="#feed">Posts</a>
+        <a class="mobileMenu__link" href="#about">About</a>
+        <a class="mobileMenu__link" href="#contact">Contact</a>
+        <a class="btn btn--primary mobileMenu__cta" href="#contact">Subscribe / Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__left">
+          <p class="badge">GitHub CMS • Fast static delivery</p>
+
+          <h1 class="h1">
+            Trading content hub —
+            <span class="gradient">readable, indexed, fast</span>
+          </h1>
+
+          <p class="lead">
+            Posts are published via GitHub commits (history, reviews, 2FA). The website renders a feed from
+            <code>posts/index.json</code> and loads posts from <code>/posts/*.md</code>.
+            Each post also gets its own SEO-friendly page at <code>/p/&lt;slug&gt;/</code>.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#feed">Open feed</a>
+            <a class="btn btn--ghost" href="#about">How publishing works</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <div class="stat__num">news</div>
+              <div class="stat__label">market-related events</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">forecast</div>
+              <div class="stat__label">scenarios & levels</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">review</div>
+              <div class="stat__label">setups & instruments</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__right">
+          <div class="cardGlass">
+            <div class="cardGlass__top">
+              <span class="dot dot--red"></span>
+              <span class="dot dot--yellow"></span>
+              <span class="dot dot--green"></span>
+              <span class="cardGlass__title">feed.preview</span>
+            </div>
+            <div class="preview">
+              <div class="hint"><b>SEO:</b> sitemap + robots + per-post static pages + JSON-LD.</div>
+              <div class="mini">
+                <div class="mini__chip">1 request feed</div>
+                <div class="mini__h">+ 1 request per post</div>
+                <div class="mini__p">Caching enabled, safe rendering.</div>
+                <div class="mini__bar"></div>
+                <div class="mini__bar mini__bar--2"></div>
+                <div class="mini__bar mini__bar--3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bgOrbs" aria-hidden="true"></div>
+    </section>
+
+    <section class="section" id="feed">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Posts</h2>
+          <p class="muted">Feed is built from <code>posts/index.json</code>. Each post is <code>/posts/&lt;slug&gt;.md</code>.</p>
+        </div>
+
+        <div class="feedControls">
+          <button class="chip isActive" data-filter="all" type="button">All</button>
+          <button class="chip" data-filter="news" type="button">News</button>
+          <button class="chip" data-filter="forecast" type="button">Forecasts</button>
+          <button class="chip" data-filter="review" type="button">Reviews</button>
+
+          <div class="feedSearch">
+            <input id="q" class="input" type="search" placeholder="Search title/tags…" autocomplete="off" />
+          </div>
+        </div>
+
+        <div id="feedList" class="feedGrid" aria-live="polite">
+          <div class="tile"><div class="muted">Loading feed…</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Publishing</h2>
+          <p class="muted">No admin panel. GitHub is the CMS: commit a markdown file, update the index.</p>
+        </div>
+
+        <div class="contactCard">
+          <div>
+            <h3 class="h3">How to publish a post</h3>
+            <p class="muted">
+              1) Add <code>/posts/YYYY-MM-DD-slug.md</code><br/>
+              2) Add a record to <code>posts/index.json</code><br/>
+              3) Commit → Pages updates automatically
+            </p>
+            <div class="note">
+              <b>Disclaimer:</b> Informational only. Not financial advice.
+            </div>
+          </div>
+
+          <div class="miniCode">
+            <div class="miniCode__title">Index record</div>
+            <pre><code>{
+  "slug": "YYYY-MM-DD-slug",
+  "title": "Title",
+  "date": "YYYY-MM-DD",
+  "category": "news|forecast|review",
+  "tags": ["tag1","tag2"],
+  "summary": "Short summary"
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Contact</h2>
+          <p class="muted">Replace links with yours.</p>
+        </div>
+
+        <div class="contactCard">
+          <div>
+            <h3 class="h3">Reach out</h3>
+            <p class="muted">Telegram/email links live here.</p>
+            <div class="contactRow">
+              <a class="btn btn--primary" href="https://t.me

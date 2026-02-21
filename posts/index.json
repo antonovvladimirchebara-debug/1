@@ -1,0 +1,12 @@
+{
+  "posts": [
+    {
+      "slug": "2026-02-21-start",
+      "title": "Project start: how this site works",
+      "date": "2026-02-21",
+      "category": "news",
+      "tags": ["MOEX", "structure", "brief"],
+      "summary": "Format, principles and publishing workflow (GitHub as CMS)."
+    }
+  ]
+}
